@@ -1,0 +1,24 @@
+.metamask-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metamask-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.metamask-card {
+  margin-top: 1%;
+  padding: 10px;
+  background-color: rgb(40, 48, 64);
+  height: 30%;
+  border-radius: 40px;
+}
+
+.metamask-title {
+  font-family: Roboto;
+  padding: 15px;
+  color: white;
+}

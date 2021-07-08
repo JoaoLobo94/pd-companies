@@ -1,14 +1,13 @@
-import React from "react";
-import MetaMaskLogin from "../../../components/Buttons/MetaMaskLogin";
-import Card from "react-bootstrap/Card";
 import AnimatedMetamaskLogo from "../../Logos/AnimatedMetamaskLogo";
+import "./LoginCard.css";
 
 const LoginCard = () => {
   return (
-    <div id="logo-container">
-      <Card>
-        <MetaMaskLogin />
-      </Card>
+    <div className="metamask-container">
+      <div className="metamask-card">
+        <div className="metamask-title">Click to login with metamask</div>
+        <div id="logo-container" className="metamask-logo"></div>
+      </div>
     </div>
   );
 };
@@ -19,5 +18,5 @@ function animatedFox() {
     container.prepend(AnimatedMetamaskLogo.container);
   });
 }
-animatedFox()
+animatedFox();
 export default LoginCard;

@@ -5,8 +5,8 @@ const AnimatedMetamaskLogo = ModelViewer({
 
   // Dictates whether width & height are px or multiplied
   pxNotRatio: true,
-  width: 50,
-  height: 40,
+  width: 110,
+  height: 110,
   // pxNotRatio: false,
   // width: 0.9,
   // height: 0.9,
@@ -19,16 +19,10 @@ const AnimatedMetamaskLogo = ModelViewer({
 
 })
 
-// look at something on the page
-AnimatedMetamaskLogo.lookAt({
-  x: 100,
-  y: 100,
-})
-
 // enable mouse follow
 AnimatedMetamaskLogo.setFollowMouse(true)
 
 // deallocate nicely
-AnimatedMetamaskLogo.stopAnimation()
+// AnimatedMetamaskLogo.stopAnimation()
 
 export default AnimatedMetamaskLogo;

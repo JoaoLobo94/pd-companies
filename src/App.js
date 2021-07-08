@@ -3,7 +3,7 @@ import Login from './pages/LandingPage/LandingPage'
 
 function App() {
   return (
-    <div className='App'>
+    <div className='app'>
       <Login />
     </div>
   )
