@@ -13,11 +13,11 @@ const LoginCard = () => {
   );
 };
 
-function animated_fox() {
+function animatedFox() {
   document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("logo-container");
-    container.appendChild(AnimatedMetamaskLogo.container);
+    container.prepend(AnimatedMetamaskLogo.container);
   });
 }
-animated_fox()
+animatedFox()
 export default LoginCard;
