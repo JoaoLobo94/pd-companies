@@ -1,12 +1,10 @@
-import LoginCard from "../../components/Cards/Login/LoginCard";
+import NavBar from './components/IndexNavBar'
 import "./LandingPage.css"
 
 const Login = () => {
   return (
     <div>
-      <div>
-      <LoginCard />
-      </div>
+      <NavBar />
     </div>
   );
 };

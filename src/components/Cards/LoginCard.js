@@ -1,4 +1,4 @@
-import AnimatedMetamaskLogo from "../../Logos/AnimatedMetamaskLogo";
+import AnimatedMetamaskLogo from "../Logos/AnimatedMetamaskLogo";
 import "./LoginCard.css";
 
 const LoginCard = () => {
