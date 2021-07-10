@@ -12,7 +12,7 @@
 .metamask-card {
   margin-top: 1%;
   padding: 10px;
-  background-color: rgb(40, 48, 64);
+  background-image: linear-gradient(to bottom,rgb(41, 48, 64) ,#336B87);
   height: 30%;
   border-radius: 40px;
 }

@@ -1,3 +1,4 @@
+// Animated fox logo needs to be only imported like a react native component
 import AnimatedMetamaskLogo from "../Logos/AnimatedMetamaskLogo";
 import "./LoginCard.css";
 
