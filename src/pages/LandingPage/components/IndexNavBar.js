@@ -1,12 +1,20 @@
-import LoginCard from "../../../components/Cards/LoginCard";
+import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import LoginModal from "./LoginModal";
 import "./IndexNavBar.css";
 
 const IndexNavBar = () => {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" variant="dark" className="navbar-container" sticky="top">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        variant="dark"
+        className="navbar-container"
+        sticky="top"
+      >
         <Navbar.Brand href="#home">Decentralize Your Work</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -14,13 +22,20 @@ const IndexNavBar = () => {
             <Nav.Link href="#deets">What is DYW</Nav.Link>
             <Nav.Link href="#deets">How do you participate</Nav.Link>
           </Nav>
-          <Nav id='user-area'>
-            <Nav.Link eventKey="link" href="#memes">User area</Nav.Link>
+          <Nav className="justify-content-end" style={{ width: "80%" }}>
+            <Nav.Link
+              id="user-area"
+              onClick={() => setModalShow(true)}
+              href="#memes"
+            >
+              User area
+            </Nav.Link>
+            <LoginModal show={modalShow} onHide={() => setModalShow(false)} />
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <LoginCard />
     </div>
   );
 };
+
 export default IndexNavBar;
