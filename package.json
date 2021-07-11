@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@metamask/logo": "MetaMask/logo",
-    "@reduxjs/toolkit": "^1.6.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.1.9",
