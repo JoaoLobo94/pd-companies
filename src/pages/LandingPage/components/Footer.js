@@ -1,0 +1,35 @@
+import "./Footer.css";
+import { MDBFooter } from "mdb-react-ui-kit";
+import GithubIcon from "../../../components/Logos/GithubIcon";
+import InstagramIcon from "../../../components/Logos/InstagramIcon";
+import LinkedinIcon from "../../../components/Logos/LinkedinIcon";
+import YoutubeIcon from "../../../components/Logos/YoutubeIcon";
+
+const Footer = () => (
+  <MDBFooter className="text-center text-lg-left footer">
+    <div className="p-2 row footer-logos">
+      <div className="footer-logos col-1">
+        <a href="#github">
+          <GithubIcon />
+        </a>
+      </div>
+      <div className="footer-logos col-1">
+        <a href="#insta">
+          <InstagramIcon />
+        </a>
+      </div>
+      <div className="footer-logos col-1">
+        <a href="#linkedin">
+          <LinkedinIcon />
+        </a>
+      </div>
+      <div className="footer-logos col-1">
+        <a href="#youtube">
+          <YoutubeIcon />
+        </a>
+      </div>
+    </div>
+  </MDBFooter>
+);
+
+export default Footer;
