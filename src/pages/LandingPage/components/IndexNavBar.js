@@ -19,10 +19,10 @@ const IndexNavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Nav.Link href="#deets">What is DYW</Nav.Link>
-            <Nav.Link href="#deets">How do you participate</Nav.Link>
+            <Nav.Link href="#deets">DYC</Nav.Link>
+            <Nav.Link href="#deets">Participate</Nav.Link>
           </Nav>
-          <Nav className="justify-content-end" style={{ width: "80%" }}>
+          <Nav className="justify-content-end" style={{ width: "100%" }}>
             <Nav.Link
               id="user-area"
               onClick={() => setModalShow(true)}
