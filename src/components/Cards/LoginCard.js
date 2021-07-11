@@ -1,10 +1,10 @@
 // Need to implement animated metamask logo. Static one is just for MVP
 import "./LoginCard.css";
-import "../Logos/metamask.svg";
 import React from "react";
 const ModelViewer = require("@metamask/logo");
 class LoginCard extends React.Component {
   componentDidMount() {
+    // Extract to seperate component this logic
         const AnimatedMetamaskLogo = ModelViewer({
           pxNotRatio: true,
           width: 110,
