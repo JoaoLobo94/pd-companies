@@ -7,7 +7,8 @@ import YoutubeIcon from "../../../components/Logos/YoutubeIcon";
 import VectorDocumentIcon from "../../../components/Logos/VectorDocumentIcon";
 
 const Footer = () => (
-  <MDBFooter className="text-center text-lg-left footer">
+  <div>
+  <MDBFooter className="text-center text-lg-left footer fixed-bottom">
     <div className="p-2 row footer-logos">
       <div className="footer-logos col-1">
         <a href="#github">
@@ -36,6 +37,7 @@ const Footer = () => (
       </div>
     </div>
   </MDBFooter>
+  </div>
 );
 
 export default Footer;

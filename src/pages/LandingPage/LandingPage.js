@@ -1,11 +1,11 @@
-import NavBar from './components/IndexNavBar'
+import NavBar from './components/NavBar'
 import Body from './components/Body'
 import Footer from './components/Footer'
 import "./LandingPage.css"
 
 const Login = () => {
   return (
-    <div>
+    <div className='container'>
       <NavBar />
       <Body />
       <Footer />

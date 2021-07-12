@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import LoginModal from "./LoginModal";
-import "./IndexNavBar.css";
+import "./NavBar.css";
 
 const IndexNavBar = () => {
   const [modalShow, setModalShow] = React.useState(false);
