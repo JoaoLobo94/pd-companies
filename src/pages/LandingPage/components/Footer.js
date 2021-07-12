@@ -4,6 +4,7 @@ import GithubIcon from "../../../components/Logos/GithubIcon";
 import InstagramIcon from "../../../components/Logos/InstagramIcon";
 import LinkedinIcon from "../../../components/Logos/LinkedinIcon";
 import YoutubeIcon from "../../../components/Logos/YoutubeIcon";
+import VectorDocumentIcon from "../../../components/Logos/VectorDocumentIcon";
 
 const Footer = () => (
   <MDBFooter className="text-center text-lg-left footer">
@@ -26,6 +27,11 @@ const Footer = () => (
       <div className="footer-logos col-1">
         <a href="#youtube">
           <YoutubeIcon />
+        </a>
+      </div>
+      <div className="footer-logos col-1">
+        <a href="https://nakamotoinstitute.org/crypto-anarchist-manifesto/">
+          <VectorDocumentIcon />
         </a>
       </div>
     </div>
