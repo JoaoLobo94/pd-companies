@@ -4,7 +4,8 @@ import { ReactComponent as DecentralizedDepiction } from "../../../images/decent
 const Body = () => {
   return (
     <div className="body-intro-content">
-      <div className="title">
+      <div className="intro">
+        <div className='title'></div>
         <h1>DECENTRALIZE YOUR WORK</h1>
         <DecentralizedDepiction />
       </div>

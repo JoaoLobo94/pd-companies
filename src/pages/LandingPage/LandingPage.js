@@ -5,6 +5,7 @@ import BodyParticipate from './components/BodyParticipate'
 import Footer from './components/Footer'
 import "./LandingPage.css"
 
+//TODO: put types of components in folders
 const Login = () => {
   return (
     <div className='container'>

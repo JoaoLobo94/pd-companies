@@ -3,3 +3,14 @@
   height: 100%;
   color: white
 }
+
+/* TODO: change in improvement ticket, with bootstrap */
+/* Make this with bootstrap */
+.intro{
+  width: 640px;
+  margin: 0 auto;
+}
+/* TODO: change in improvement ticker */
+h1{
+  padding-left: 11%;
+}
