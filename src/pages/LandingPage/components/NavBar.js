@@ -19,7 +19,7 @@ const IndexNavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Nav.Link href="#deets">DYC</Nav.Link>
+            <Nav.Link href="#deets">DYW</Nav.Link>
             <Nav.Link href="#deets">Participate</Nav.Link>
           </Nav>
           <Nav className="justify-content-end" style={{ width: "100%" }}>
