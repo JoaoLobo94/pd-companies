@@ -2,7 +2,7 @@ import "./BodyWhatIs.css";
 
 const BodyWhatIs = () => {
   return (
-    <div>
+    <div className='body-WhatIs-content'>
       <h1>What is decentralization</h1>
       <h2>Future of organizations</h2>
     </div>
