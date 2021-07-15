@@ -1,8 +1,11 @@
 // Need to implement animated metamask logo. Static one is just for MVP
 import "./LoginCard.css";
 import React from "react";
+import MetamaskWalletConnection from "../Inputs/MetamaskWalletConnection";
 const ModelViewer = require("@metamask/logo");
+
 class LoginCard extends React.Component {
+  // Convert into functional component with async
   componentDidMount() {
     // Extract to seperate component this logic
     metamaskAnimation();
@@ -11,8 +14,10 @@ class LoginCard extends React.Component {
     return (
       <div className="metamask-container">
         <div className="metamask-card">
-          <div className="metamask-title">Click to login with metamask</div>
-          <div id="logo-container" className="metamask-logo"></div>
+          <div className="metamask-title">Click to login with your wallet</div>
+          <div id="logo-container" className="metamask-logo">
+            <MetamaskWalletConnection />
+          </div>
         </div>
       </div>
     );
@@ -28,7 +33,7 @@ function metamaskAnimation() {
     slowDrift: false,
   });
   AnimatedMetamaskLogo.setFollowMouse(true);
-  const container = document.getElementById("logo-container");
+  const container = document.getElementById("metamask-button");
   container.prepend(AnimatedMetamaskLogo.container);
 }
 
