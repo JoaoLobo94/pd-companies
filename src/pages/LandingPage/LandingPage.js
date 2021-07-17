@@ -7,7 +7,7 @@ import "./LandingPage.css"
 
 //TODO: put types of components in folders. Add text and formatting to the rest of the body. Pure styling
 
-const Login = () => {
+const LandingPage = () => {
   return (
     <div className='container'>
       <NavBar />
@@ -19,4 +19,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LandingPage;
