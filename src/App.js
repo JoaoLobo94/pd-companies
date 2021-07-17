@@ -1,12 +1,19 @@
-import './App.css'
-import Login from './pages/LandingPage/LandingPage'
+import "./App.css";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import UserDashboard from "./pages/UserAreaDashboard/UserDashboard";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className='app'>
-      <Login />
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/userArea" component={UserDashboard} />
+        </Switch>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
