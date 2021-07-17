@@ -26,7 +26,6 @@ const IndexNavBar = () => {
             <Nav.Link
               id="user-area"
               onClick={() => setModalShow(true)}
-              href="#memes"
             >
               User area
             </Nav.Link>
