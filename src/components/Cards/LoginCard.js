@@ -5,9 +5,9 @@ import MetamaskWalletConnection from "../Inputs/MetamaskWalletConnection";
 const ModelViewer = require("@metamask/logo");
 
 class LoginCard extends React.Component {
-  // Convert into functional component with async
+  //TODO Convert into functional component with async
   componentDidMount() {
-    // Extract to seperate component this logic
+    //TODO Extract to seperate component this logic
     metamaskAnimation();
   }
   render() {
