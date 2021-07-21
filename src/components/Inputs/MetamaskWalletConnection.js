@@ -1,15 +1,14 @@
 import "./MetamaskWalletConnection.css";
-const Web3 = require("web3");
-import { useWallet, UseWalletProvider } from "use-wallet";
 import { useHistory } from 'react-router-dom'
 
+const Web3 = require("web3");
 const MetamaskWalletConnection = () => {
-  const wallet = useWallet();
   const connectWallet = async () => {
-    if (wallet.status === "connected") {
+    if (window.ethereum) {
+      await window.ethereum.send('eth_requestAccounts');
+      window.web3 = new Web3(window.ethereum);
       loginUser()
     } else {
-      await wallet.connect();
       loginUser()
     }
   };
@@ -26,12 +25,5 @@ const MetamaskWalletConnection = () => {
     </div>
   );
 };
-// eslint-disable-next-line
-export default () => (
-  <UseWalletProvider
-    chainId={1}
-    connectors={{ portis: { provider: window.cleanEtherium } }}
-  >
-    <MetamaskWalletConnection />
-  </UseWalletProvider>
-);
+
+export default MetamaskWalletConnection
