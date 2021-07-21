@@ -1,4 +1,5 @@
 import "./MetamaskWalletConnection.css";
+const Web3 = require("web3");
 import { useWallet, UseWalletProvider } from "use-wallet";
 import { useHistory } from 'react-router-dom'
 

@@ -3,8 +3,8 @@ import './UserDashboard.css'
 
 const UserDashboard = () => {
   return (
-    <div>
-      <h1>hello</h1>
+    <div className='whitea'>
+      <p>123abcx</p>
     </div>
   );
 };
