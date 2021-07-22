@@ -1,23 +1,23 @@
 import "./MetamaskWalletConnection.css";
-import { useHistory } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 
-const Web3 = require("web3");
 const MetamaskWalletConnection = () => {
+  const Web3 = require("web3");
   const connectWallet = async () => {
-    if (window.ethereum) {
-      await window.ethereum.send('eth_requestAccounts');
-      window.web3 = new Web3(window.ethereum);
-      loginUser()
+    if (typeof window.ethereum !== "undefined") {
+      new Web3(window.ethereum);
+      await window.ethereum.enable();
+      loginUser();
     } else {
-      loginUser()
+      loginUser();
     }
   };
-  
-  const history  = useHistory()
 
-  const loginUser = () =>{
-    history.push("/userArea")
-  }
+  const history = useHistory();
+
+  const loginUser = () => {
+    history.push("/userArea");
+  };
 
   return (
     <div>
@@ -26,4 +26,4 @@ const MetamaskWalletConnection = () => {
   );
 };
 
-export default MetamaskWalletConnection
+export default MetamaskWalletConnection;
