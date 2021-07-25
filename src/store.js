@@ -1,24 +1,14 @@
-import allReducers from "./reducers/index";
+import persistReducer from "./reducers/index";
 import { createStore, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
-// import { persistStore, persistReducer } from "redux-persist";
-// import storage from "redux-persist/lib/storage";
+import { persistStore } from "redux-persist";
 
 const composeEnhancers = composeWithDevTools({});
-//TODO: implement presistance
-
-// const persistConfig = {
-//   key: "root",
-//   storage,
-// };
-
-// const persistedReducer = persistReducer(persistConfig, allReducers);
-
-// export const persistor = persistStore(store);
 
 export const store = createStore(
-  allReducers,
+  persistReducer,
   composeEnhancers(applyMiddleware(thunk))
 );
 
+export const persistor = persistStore(store);

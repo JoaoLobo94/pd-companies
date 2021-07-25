@@ -7,7 +7,7 @@ const MetamaskWalletConnection = () => {
   const dispatch = useDispatch();
 
   const connectWallet = async () => {
-    if (!window.ethereum._metamask.isUnlocked() === false) {
+    if (await window.ethereum._metamask.isUnlocked() === false) {
       await window.ethereum.request({ method: "eth_requestAccounts" });
       dispatch(login());
       loginUser();
