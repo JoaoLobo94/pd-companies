@@ -11,7 +11,7 @@ const IndexNavBar = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        variant="dark"
+        variant="white"
         className="navbar-container"
         sticky="top"
       >

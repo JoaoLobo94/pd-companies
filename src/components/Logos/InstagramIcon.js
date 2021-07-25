@@ -4,7 +4,7 @@ import Svg, { Path } from "react-native-svg";
 function InstagramIcon(props) {
   return (
     <Svg
-      fill="none"
+      fill="dark"
       stroke="white"
       strokeLinecap="round"
       strokeLinejoin="round"

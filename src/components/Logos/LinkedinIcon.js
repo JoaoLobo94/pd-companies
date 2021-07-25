@@ -5,7 +5,7 @@ function LinkedinIcon(props) {
   return (
     <Svg
       viewBox="0 0 1024 1024"
-      fill="white"
+      fill="dark"
       height="1.4em"
       width="1.4em"
       {...props}
