@@ -1,7 +1,7 @@
 // Need to implement animated metamask logo. Static one is just for MVP
 import "./LoginCard.css";
 import React from "react";
-import MetamaskWalletConnection from "../Inputs/MetamaskWalletConnection";
+import MetamaskWalletConnection from "../Inputs/MetamaskWalletLogin";
 const ModelViewer = require("@metamask/logo");
 
 class LoginCard extends React.Component {

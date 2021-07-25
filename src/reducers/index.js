@@ -1,11 +1,11 @@
 import MetamaskLoginReducer from "./MetamaskLogin";
-import MetamaskBalances from "./MetamaskBalance";
+// import MetamaskBalances from "./MetamaskBalance";
 import { combineReducers } from "redux";
 
 
 const allReducers = combineReducers({
   isloggedWithMetamask: MetamaskLoginReducer,
-  MetamaskBalances: MetamaskBalances,
+  // MetamaskBalances: MetamaskBalances,
 });
 
 export default allReducers

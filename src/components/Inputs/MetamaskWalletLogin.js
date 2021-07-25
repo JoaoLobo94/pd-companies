@@ -1,19 +1,20 @@
 import "./MetamaskWalletConnection.css";
 import { useHistory } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux"
-import { login } from "../../actions"
+import { useDispatch } from "react-redux";
+import { login } from "../../actions";
 
 const MetamaskWalletConnection = () => {
-  const isLogged = useSelector(state => state.isloggedWithMetamask)
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  const connectWallet = () => {
-    if (isLogged === false) {
-      dispatch(login())
+  const connectWallet = async () => {
+    if (!window.ethereum._metamask.isUnlocked() === false) {
+      await window.ethereum.request({ method: "eth_requestAccounts" });
+      dispatch(login());
       loginUser();
-    } else {
-      loginUser();
+    }else{
+      loginUser()
     }
+
   };
 
   const history = useHistory();

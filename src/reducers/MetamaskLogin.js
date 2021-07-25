@@ -1,14 +1,12 @@
 const MetamaskLoginReducer = (state = false, action) => {
-  debugger
-    switch (action.type) {
-      case "LOGIN":
-        return (state = true);
-      case "LOGOUT":
-        // TODO: implement
-        break;
-      default:
-        return state;
-    }
+  switch (action.type) {
+    case "LOGIN":
+      return (state = true);
+    case "LOGOUT":
+      return (state = false);
+    default:
+      return state
+  }
 };
 
-export default MetamaskLoginReducer
+export default MetamaskLoginReducer;

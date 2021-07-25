@@ -1,15 +1,12 @@
-const Web3 = require("web3");
-
 export const login = () => {
-  return async (dispatch) => {
-    dispatch ({
+  return  {
       type: "LOGIN",
-      payload: metamaskLoginCall(),
-    });
   };
 };
 
-const metamaskLoginCall = async () => {
-  new Web3(window.ethereum);
-  await window.ethereum.enable();
+
+export const logout = () => {
+  return  {
+      type: "LOGOUT",
+  };
 };
