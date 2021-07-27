@@ -7,14 +7,19 @@ const MetamaskWalletConnection = () => {
   const dispatch = useDispatch();
 
   const connectWallet = async () => {
-    if (await window.ethereum._metamask.isUnlocked() === false) {
-      await window.ethereum.request({ method: "eth_requestAccounts" });
-      dispatch(login());
-      loginUser();
-    }else{
-      loginUser()
+    if (typeof window.ethereum == "undefined") {
+      console.log("Please install metamask");
     }
-
+    if (window.ethereum.isMetaMask) {
+      //TODO Implement connect wallet if unconected not just unlock
+      if ((await window.ethereum._metamask.isUnlocked()) === false) {
+        await window.ethereum.request({ method: "eth_requestAccounts" });
+        dispatch(login());
+        loginUser();
+      } else {
+        loginUser();
+      }
+    }
   };
 
   const history = useHistory();
