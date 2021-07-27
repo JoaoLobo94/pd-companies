@@ -12,6 +12,7 @@ const MetamaskWalletConnection = () => {
     }
     if (window.ethereum.isMetaMask) {
       //TODO Implement connect wallet if unconected not just unlock
+      //TODO Implement check if wallet is connect. Emulate uniswap
       if ((await window.ethereum._metamask.isUnlocked()) === false) {
         await window.ethereum.request({ method: "eth_requestAccounts" });
         dispatch(login());
