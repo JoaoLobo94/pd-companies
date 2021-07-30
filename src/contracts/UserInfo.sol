@@ -4,7 +4,7 @@ contract userInfo {
     struct User {
         uint256 id;
         string name;
-        string job;
+        string job; // TODO: add multiple jobs funcitonality. Needs to be dynamic array
         string jobType;
         uint8 reputation;
         address account;
@@ -42,7 +42,22 @@ contract userInfo {
 	    }
     }
 
-    function update(uint256 id) public {
+    //TODO: update functionality for all other params of the struct
 
+    function updateAccount(uint256 id, address account) public {
+	    for (uint256 i = 0; i < users.length; i++) {
+		    if (users[i].id == id) {
+			    users[i].account = account;
+		    }
+	    }
     }
+
+    function updateJob(uint256 id, string memory job) public {
+	    for (uint256 i = 0; i < users.length; i++) {
+		    if (users[i].id == id) {
+			    users[i].job = job;
+		    }
+	    }
+    }
+  //TODO: implement destroy functionality if a user wants to quit
 }
