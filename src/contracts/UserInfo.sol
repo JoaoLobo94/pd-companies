@@ -59,5 +59,13 @@ contract userInfo {
 		    }
 	    }
     }
+
+    function updateReputation(uint256 id, uint8 reputation) public {
+	    for (uint256 i = 0; i < users.length; i++) {
+		    if (users[i].id == id) {
+			    users[i].reputation = reputation;
+		    }
+	    }
+    }
   //TODO: implement destroy functionality if a user wants to quit
 }
