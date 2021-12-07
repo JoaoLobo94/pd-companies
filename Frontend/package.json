@@ -12,6 +12,7 @@
     "chai": "4.3.4",
     "chai-as-promised": "7.1.1",
     "chai-bignumber": "3.0.0",
+    "identicon": "^3.0.1",
     "identicon.js": "^2.3.3",
     "mdb-react-ui-kit": "^1.5.0",
     "react": "^17.0.2",
